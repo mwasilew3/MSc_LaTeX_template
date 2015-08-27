@@ -1,92 +1,45 @@
-\chapter{Aliquam erat volutpat}
+\chapter{List of files created during the project}
 
-(If you're wondering what all this weirdness is, check out\\
-http://www.subterrane.com/loremipsum.shtml)
+Files created up to Development Phase:
+\begin{itemize}
+\item “MW v0.1 self” - file to learn Cognos, shows how to combine CRM data with Mosaic data
+\item “MW v0.1 self2” - first attempt to create a chart, doesn't work
+\item “MW v0.1 self3” - attempt to create a chart, the query itself is working (everything is correct from the sytax point of view), but data is unavailable (aggregate function? filtering error?)
+\item “MW v0.1 self4” - debugging the self3 report, added a list to show filtered data returned from the query. Result: there are some entries after filtering, but not as expected
+\item “MW v0.1 self5” - from the start, this time the results are as expected (type of result, number of result)
+\item “MW v0.2, working chart, 3 days, type of report – day” - first chart working as expected, it shows numbers about queries from all services grouped into Mosaic groups, counted by reference, limited to 3 days (x - mosaic group, e.g. B, G, K; y - count by reference, multiple columns - different values in 'subject')
+\item “MW v0.2, working chart, entire May (previous was 4 days), Mosaic group – subject” - second chart working as expected, more accurate; x - type code, e.g. A01, A02; y - count by reference; only 4 services - 4 columns; for the entire May
+\item “MW v0.2, working chart, entire May, Mosaic group – subject” - similar to previous one, not as detailed, x - Mosaic groups, e.g. B, G; y - count by reference; columns - different services (different values in 'subject'); entire May
+\end{itemize}
 
-Aliquam erat volutpat. Phasellus sed tortor at metus luctus venenatis.
-Etiam vel dolor vel lectus elementum adipiscing. Donec sit amet dolor. In
-hac habitasse platea dictumst. Nullam bibendum. Etiam eget mauris non velit
-faucibus volutpat. Ut ultrices nonummy mi. Praesent convallis, tellus eget
-posuere auctor, est est mollis risus, vitae fringilla orci nisl vel erat.
-Morbi ultricies. Proin consequat. Praesent consequat nulla a mauris.
-Vivamus tellus. 
+Files created during the Development phase:
+\begin{itemize}
+\item “MW one issue on multiple channels v1.0” - find cases of misuse of multiple channels
+\item “MW report 3”, “MW Report 3, blank chart” - base report that can be used to generate different reports about number of interactions with the Council, couldn't overwrite the original one, created another one to have a more meaningful name
+\item “MW report 3, chart 1” - both above and below 3 interactions on one chart
+\item “MW report 3, chart 1.1 blank” - template for the charts 1.1 and 1.2
+\item “MW report 3, chart 1.1” - chart with only above 3 interactions, using filter
+\item “MW report 3, chart 1.1 correct” - chart with only above 3 iteractions, using filter and a list to show data (identical to the previous one, extended with the list, couldn't overwrite the previous one)
+\item “MW report 3, chart 1.2 correct” - chart with only below 3 interactions, with list
+\end{itemize}
+ 
+further parts of report 3 have 2 dimensions with many entries. As a result it would have a lot of columns and would not be easily readable. I decided to split it into 3 charts: groups x services; detailed groups x services; selectable service -> group
 
-\section{Proin consequat}
+\begin{itemize}
+\item “MW report 3, chart 2.1” - Mosaic group x services
+\item “MW report 3, chart 2.2” - Mosaic group detailed x services
+\item “MW report 3, chart 2.3 group code” - the use of the selected service across different Mosaic groups
+\item “MW report 3, chart 2.3 group type code” - the use of the selected service across different Mosaic detailed groups
+\item “MW report 3, chart 3.1” - blank report that is used as a basis for the other 3.1 reports
+\item “MW report 3, chart 3.1 above 3” - Mosaic groups that active users belong to
+\item “MW report 3, chart 3.1 up to 3” - Mosaic groups that occassional users belong to
+\item “report 3.1 “- 3 charts on one page
+\end{itemize}
 
-Sed blandit nunc id massa. Integer dictum euismod tellus. Sed metus nunc,
-rhoncus ut, volutpat in, lacinia ac, dolor. Vestibulum quis augue
-vel dui volutpat eleifend. Praesent vulputate mattis leo. Phasellus pretium
-semper libero. Mauris a enim non pede convallis suscipit. Suspendisse nibh
-diam, luctus in, cursus at, dignissim nec, pede. Aenean semper massa.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-turpis egestas. Nullam a pede ut ligula viverra vehicula. Sed augue mi,
-rhoncus ut, ultrices sed, tincidunt eget, libero. Nam quis dolor. Nunc
-fermentum hendrerit arcu. Integer non enim. Aenean blandit velit et felis. Cum
-sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-mus. Curabitur nonummy malesuada pede. Nunc et enim. Quisque dui. Pellentesque
-in felis. 
-
-Sed id mi. Pellentesque pede leo, auctor et, interdum eu, posuere semper,
-nisl. Morbi commodo euismod wisi. Cras ornare mauris et erat. Duis neque
-neque, pretium ut, bibendum nec, ultrices a, lacus. Nullam lobortis. Ut
-luctus, diam non tempus pellentesque, dui justo consequat ligula, eu
-consectetuer tortor diam vel dui. 
-
-\begin{figure}
-    \begin{center}
-        A figure.
-        \caption{Nunc lacinia}
-    \end{center}
-\end{figure}
-
-Phasellus porttitor. In pede lacus, convallis semper, fermentum eu,
-vehicula quis, dui. Ut sodales pede sed est. Cras lacinia. Nulla ac augue
-in lectus sodales ultricies. Nam velit nunc, convallis ac, ullamcorper
-semper, malesuada vel, eros. Nunc risus. Vestibulum ac erat. Sed id justo
-id nibh viverra facilisis. Curabitur laoreet. Nunc sodales odio at mauris.
-Vestibulum tincidunt sem eget pede. Nulla nec risus non wisi varius porta.
-Morbi nibh. Donec lacus. Vestibulum ante ipsum primis in faucibus orci
-luctus et ultrices posuere cubilia Curae; Vestibulum lectus. Suspendisse
-sed dui. 
-
-Nunc lacinia, sapien nec fermentum pretium, turpis elit egestas metus, a
-interdum tellus justo semper neque. Integer quis purus semper metus
-vestibulum pharetra. Maecenas commodo fermentum wisi. Pellentesque diam.
-Proin sit amet orci. Praesent auctor. Sed tortor. Sed sodales aliquam diam.
-Vivamus cursus leo nec velit. Sed non pede. Nulla tempor imperdiet est.
-Curabitur ornare cursus ante. Sed varius lobortis quam. Quisque ac arcu id
-wisi ultrices pellentesque. Pellentesque eleifend consequat ipsum. Fusce
-vestibulum sagittis lectus. Fusce risus. Duis felis. Suspendisse justo.
-Integer ut libero a purus egestas luctus. Mauris dictum augue a enim.
-Vivamus sodales placerat ipsum. Nunc lacus. 
-
-\begin{quote}
-Curabitur dictum. Donec vestibulum diam nec lacus. Nulla convallis, eros
-vitae varius volutpat, erat quam facilisis purus, in accumsan dolor felis
-vitae nunc. 
-\end{quote}
-
-Aliquam erat volutpat. Phasellus sed tortor at metus luctus venenatis.
-Etiam vel dolor vel lectus elementum adipiscing. Donec sit amet dolor. In
-hac habitasse platea dictumst. Nullam bibendum. Etiam eget mauris non velit
-faucibus volutpat. \footnote{Ut ultrices nonummy mi. Praesent convallis, tellus eget
-posuere auctor, est est mollis risus, vitae fringilla orci nisl vel erat.
-Morbi ultricies.} Proin consequat. Praesent consequat nulla a mauris.
-Vivamus tellus. 
-
-Phasellus porttitor. In pede lacus, convallis semper, fermentum eu,
-vehicula quis, dui. Ut sodales pede sed est. Cras lacinia. Nulla ac augue
-in lectus sodales ultricies. Nam velit nunc, convallis ac, ullamcorper
-semper, malesuada vel, eros. Nunc risus. Vestibulum ac erat. Sed id justo
-id nibh viverra facilisis. Curabitur laoreet. Nunc sodales odio at mauris.
-Vestibulum tincidunt sem eget pede. Nulla nec risus non wisi varius porta.
-Morbi nibh. Donec lacus. Vestibulum ante ipsum primis in faucibus orci
-luctus et ultrices posuere cubilia Curae; Vestibulum lectus. Suspendisse
-sed dui. 
-
-Sed id mi. Pellentesque pede leo, auctor et, interdum eu, posuere semper,
-nisl. Morbi commodo euismod wisi. Cras ornare mauris et erat. Duis neque
-neque, pretium ut, bibendum nec, ultrices a, lacus. Nullam lobortis. Ut
-luctus, diam non tempus pellentesque, dui justo consequat ligula, eu
-consectetuer tortor diam vel dui. 
-
+Another session:
+ 
+\begin{itemize}
+\item “MW Report 2, 2.1” – identify citizens who interacted multiple times
+\item “MW Report 2, 2.2” – multiple interactions through different channels
+\end{itemize}
+ 

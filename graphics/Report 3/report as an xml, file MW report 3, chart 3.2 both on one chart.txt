@@ -1,0 +1,298 @@
+<report xmlns="http://developer.cognos.com/schemas/report/11.0/" useStyleVersion="10" expressionLocale="en-gb">
+	<modelPath>/content/folder[@name='Channel Shift']/package[@name='MosaicCRMpackage']/model[@name='2015-06-23T13:54:31.394Z']</modelPath>
+	<drillBehavior modelBasedDrillThru="true"/>
+	<layouts>
+		<layout>
+			<reportPages>
+				<page name="Page1">
+					<style>
+						<defaultStyles>
+							<defaultStyle refStyle="pg"/>
+						</defaultStyles>
+					</style>
+					<pageBody>
+						<style>
+							<defaultStyles>
+								<defaultStyle refStyle="pb"/>
+							</defaultStyles>
+						</style>
+						<contents><table><style><defaultStyles><defaultStyle refStyle="tb"/></defaultStyles><CSS value="border-collapse:collapse;width:100%"/></style><tableRows><tableRow><tableCells><tableCell><contents><v2_combinationChart maxHotspots="10000" name="Combination Chart1" refQuery="Query1">
+														<v2_combinationTypeTooltips/>
+														<v2_legend>
+															<v2_legendPosition>
+																<v2_legendPreset/>
+															</v2_legendPosition>
+															<v2_legendTitle refQuery="Query1">
+																<v2_chartTextContents>
+																	<v2_automaticText/>
+																</v2_chartTextContents>
+																<style>
+																	<defaultStyles>
+																		<defaultStyle refStyle="lx"/>
+																	</defaultStyles>
+																</style>
+															</v2_legendTitle>
+															<style>
+																<defaultStyles>
+																	<defaultStyle refStyle="lg"/>
+																</defaultStyles>
+															</style>
+														</v2_legend>
+														<v2_commonAxis>
+															<v2_ordinalAxis>
+																<v2_axisTitle refQuery="Query1">
+																	<v2_chartTextContents>
+																		<v2_automaticText/>
+																	</v2_chartTextContents>
+																	<style>
+																		<defaultStyles>
+																			<defaultStyle refStyle="at"/>
+																		</defaultStyles>
+																	</style>
+																</v2_axisTitle>
+																<v2_axisLine lineWeight="0"/>
+																<v2_axisLabels>
+																	<style>
+																		<defaultStyles>
+																			<defaultStyle refStyle="al"/>
+																		</defaultStyles>
+																	</style>
+																</v2_axisLabels>
+															</v2_ordinalAxis>
+															<chartNodes><chartNode><chartNodeMembers><chartNodeMember refDataItem="Group Code"><chartContents><chartTextItem><dataSource><memberCaption/></dataSource></chartTextItem></chartContents><sortList><sortItem refDataItem="Group Code"/></sortList></chartNodeMember></chartNodeMembers></chartNode></chartNodes></v2_commonAxis>
+														<v2_topLeftAxis>
+															<v2_combinationChartTypes>
+																<v2_bar borders="show">
+																	<v2_solidPalette>
+																		<v2_solidPaletteEntries>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#8599D3">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#8599D3"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#5876AE"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#E3AE6C">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#E3AE6C"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#CD854E"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#839862">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#839862"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#6C7F56"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#B7C873">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#B7C873"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#AFB885"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#8484A8">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#8484A8"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#525E7E"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#C0CCED">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#C0CCED"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#B0C2E5"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#8C5580">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#8C5580"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#794067"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#C789BC">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#C789BC"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#BB72BC"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#D5BAEF">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#D5BAEF"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#C29FD1"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#83683F">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#83683F"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#604926"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#DCB05A">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#DCB05A"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#C09C52"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#F4DF9E">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#F4DF9E"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#E4CF87"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#5F8A8C">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#5F8A8C"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#537579"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#96C4B2">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#96C4B2"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#89B0A0"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#CBE8E7">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#CBE8E7"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#BDD6D5"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#AE6564">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#AE6564"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#875352"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#D88C6F">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#D88C6F"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#C47D61"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#E3C9B0">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#E3C9B0"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#D2B2A5"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#848484">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#848484"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#555555"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#a4a4a4">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#a4a4a4"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#909090"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																			<v2_solidPaletteEntry>
+																				<v2_fillEffect defaultColor="#C7C7C7">
+																					<v2_linearGradient gradientAngle="0">
+																						<v2_gradientColor colorPosition="0" gradientColor="#C7C7C7"/>
+																						<v2_gradientColor colorPosition="100" gradientColor="#c1c1c1"/>
+																					</v2_linearGradient>
+																				</v2_fillEffect>
+																			</v2_solidPaletteEntry>
+																		</v2_solidPaletteEntries>
+																	</v2_solidPalette>
+																	<!-- v2_solidPaletteRef ref=&amp;amp;quot;gDefaultSolid&amp;amp;quot;/ -->
+																	<chartNodes><chartNode><chartNodeMembers><chartNodeMember refDataItem="above 3"><chartContents><chartTextItem><dataSource><memberCaption/></dataSource></chartTextItem></chartContents></chartNodeMember></chartNodeMembers></chartNode></chartNodes></v2_bar>
+															</v2_combinationChartTypes>
+															<v2_axis>
+																<v2_axisTitle refQuery="Query1">
+																	<v2_chartTextContents>
+																		<v2_automaticText/>
+																	</v2_chartTextContents>
+																	<style>
+																		<defaultStyles>
+																			<defaultStyle refStyle="at"/>
+																		</defaultStyles>
+																	</style>
+																</v2_axisTitle>
+																<v2_axisLine lineWeight="0"/>
+																<v2_axisRange>
+																	<v2_automaticRange/>
+																</v2_axisRange>
+																<v2_axisLabels>
+																	<style>
+																		<defaultStyles>
+																			<defaultStyle refStyle="al"/>
+																		</defaultStyles>
+																	</style>
+																</v2_axisLabels>
+																<v2_majorGridlines lineWeight="0" lineColor="#CCCCCC"/>
+																<v2_majorBackgroundColors>
+																	<v2_firstBackgroundColor color="#D2D2D2" transparency="50"/>
+																	<v2_secondBackgroundColor color="#E2E2E2" transparency="50"/>
+																</v2_majorBackgroundColors>
+															</v2_axis>
+														</v2_topLeftAxis>
+														<style>
+															<defaultStyles>
+																<defaultStyle refStyle="ch"/>
+															</defaultStyles>
+														</style>
+														<noDataHandler>
+															<contents>
+																<block>
+																	<contents>
+																		<textItem>
+																			<dataSource>
+																				<staticValue>No Data Available</staticValue>
+																			</dataSource>
+																			<style>
+																				<CSS value="padding:10px 18px;"/>
+																			</style>
+																		</textItem>
+																	</contents>
+																</block>
+															</contents>
+														</noDataHandler>
+														<v2_defaultChartMeasure refDataItem="Reference #"/></v2_combinationChart>
+												</contents></tableCell><tableCell><contents/></tableCell><tableCell><contents/></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents/></tableCell><tableCell><contents/></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents/></tableCell><tableCell><contents/></tableCell></tableCells></tableRow></tableRows></table></contents>
+					</pageBody>
+				</page>
+			</reportPages>
+		</layout>
+	</layouts>
+	<XMLAttributes><XMLAttribute name="RS_CreateExtendedDataItems" value="true" output="no"/><XMLAttribute name="listSeparator" value="," output="no"/><XMLAttribute name="RS_modelModificationTime" value="2015-06-23T13:54:31.520Z" output="no"/></XMLAttributes><queries><query name="Query1"><source><model/></source><selection><dataItem name="Creation Source" aggregate="none" rollupAggregate="none"><expression>[MW].[MW].[Creation Source]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="Group" aggregate="none" rollupAggregate="none"><expression>[MW].[MW].[Group]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="Date Created" aggregate="none" rollupAggregate="none"><expression>[MW].[MW].[Date Created]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="Reference #" aggregate="count" rollupAggregate="total"><expression>[MW].[MW].[Reference #]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="Subject" aggregate="none" rollupAggregate="none"><expression>[MW].[MW].[Subject]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="Product Hierarchy" aggregate="none" rollupAggregate="none"><expression>[MW].[MW].[Product Hierarchy]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="UPRN" aggregate="none" rollupAggregate="none"><expression>[MW].[MW].[UPRN]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="No of interactions with CEC"><expression>count (distinct [Reference #] for [UPRN])</expression></dataItem><dataItem name="above 3" aggregate="none" rollupAggregate="none"><expression>if ([No of interactions with CEC] &gt; 3) then ( 'above 3') else ('up to 3')</expression></dataItem><dataItem name="Group Type Code" aggregate="none" rollupAggregate="none"><expression>[Presentation Layer].[Group Type].[Group Type Code]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem><dataItem name="Group Code" aggregate="none" rollupAggregate="none"><expression>[Presentation Layer].[Group Type].[Group Code]</expression><XMLAttributes><XMLAttribute name="RS_dataType" value="3" output="no"/><XMLAttribute name="RS_dataUsage" value="attribute" output="no"/></XMLAttributes></dataItem></selection></query></queries><reportName>MW Report 3, chart 3.2 both on one chart</reportName></report>

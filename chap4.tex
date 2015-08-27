@@ -1,0 +1,57 @@
+%% Sample chapter file, for use in a thesis.
+%% Don't forget to put the \chapter{...} header onto each file.
+
+\chapter{Analysis and evaluation}
+	\section{Evaluation of the tools used}
+
+		\subsection{CRM data}
+		
+The CRM data is easy to extract from the RightNow system and it is formatted in a way that can be read by Cognos to build a package. The "Incidents" table provides a very detailed picture of what is happening on every channel as entries are created even for queries where full data cannot be provided.
+
+The "Incidents" table in the CRM system provides a lot of data for analysis, but is not sufficient to understand fully the situation around an interaction between a resident and the CEC. It would be extremely useful to combine it with analysis of unstructured data, e.g. comments left by consultants interacting with citizens.
+
+The "Incidents" table in the CRM system contains only information about transactions initiated by citizens, e.g. they submitted a web-form. It would be very useful to combine this data with web analytics to widen the analysis and add cases where the form was not submitted, e.g. someone started filling the form, but for some reason did not submit it or made a phone call to the Council instead.
+
+In Figure 3.13 (Report 1, Query 3) you can see that on 15-05-15 and 15-05-18 someone contacted CEC regarding a service belonging to the same "Product Hierarchy". However, they used different channels. As a result values in the field "subject" are different. This is probably due to inconsistencies in implementations between web and phone channel. This has an impact on the quality of data. 
+
+The "Incidents" table in the CRM system does not contain a field that allows identification of all entries related to one problem. Up to my best knowledge there is no mechanism at the moment to link multiple "Incidents" entries regarding the same problem, e.g. many people reporting the same bin as missed. 
+
+It was difficult to determine a number of things about the CRM system and data. It would have been useful if access to the documentation was provided or a person knowledgeable about the system could provide support.
+
+The results of the project were greatly limited by resources, in particular by the time available. If there was more time available, it would be possible to review other tables in the database (instead of only relying on the suggestion of clients).
+		
+		\subsection{IBM Cognos}
+
+Cognos is a very robust platform. It makes many steps in the development process smoother and provides very convenient channels for publishing. It deals well with ETL activities, i.e. exporting data from many formats and the initial processing of integrated data. With Cognos one can work with both relational and dimensional data at the same time, e.g. SQL and OLAP can be used on separate datasets and be combined in one report. It makes editing easier, e.g. changing a field in one part changes it everywhere else. There are free, learning resources available online - the official documentation, cookbooks, tutorials \citep{MIT}. However, some things are not very intuitive and you have to learn how to think about them "in Cognos categories". There are also many small bugs that have not been solved for a long time.
+
+	\section{Evaluation of the work undertaken}
+	
+The work undertaken in this project by no means exhausts the objectives or needs at the Council. There are many improvements that could be done even to the reports themselves, e.g. drill through reports - user selects a service, a chart is displayed with columns showing use across Mosaic groups and clicking on a column opens another chart showing the use within types belonging to this group.
+
+		\subsection{Report 1}
+		
+Report 1 was looking for evidence of a specific behaviour. Therefore, it was not an open question in its nature. The scope of the analysis was not being changed or expanded depending on the data. Instead, there was a set of metrics which described this behaviour and so the implementation was looking for very specific patterns in the data. The objective was achieved and the report generates a list showing desired information (occurrences of interactions which potentially could point to deliberate use of multiple channels for one issue).
+		
+		\subsection{Report 2}
+		
+Report 2 was more "exploratory". It was not looking for anything in particular, but rather was trying to cast some light on behaviour. As such, the data dictated the direction of this report.
+
+After initial findings it was clear that the analysis would benefit a lot from adding other sources of data to Cognos. One idea included adding unstructured data, such as comments of consultants handling an issue. Although it was possible to point to unusual cases, the "Incidents" table was in many cases insufficient to provide definitive answers. It gives very detailed information, e.g. which interface citizens use and how, who uses them (which can help when controlling demographics in focus groups), but not details about the interactions regarding a particular issue. Another idea was to add web analytics data. The "Incidents" table contains only information about issues reported to the Council. If a user went to the website and failed to submit a web form it would not be picked up by the CRM system. This potentially leaves out a lot of information about negative experiences of users.
+
+Considering the above, this report in no way exhausts the topic and there are many questions to be answered. It might point a service manager to specific cases, but they require further analysis.
+		
+		\subsection{Report 3}
+		
+The third report was the most complex one. The objective, which was to show who primary users are, was achieved to the extent possible using Cognos. A number of charts were created showing the usage among citizens from different perspectives, giving a general overview and a detailed insight into specifics. It visualises the use across all services and the use of a specific service in different social groups. After viewing the charts, the information about social groups can be interpreted using the Mosaic portal (Segmentation), e.g. read the description of A01 group. The Mosaic package allows creation of charts with metric specific information, e.g. age distribution among users. However, the Mosaic personas (linked with CRM data using UPRN) are descriptions of households, not individuals. Having that in mind, the objective from the Define stage was to create a full picture using personas rather than analysing one attribute (it is not a single person reporting an issue, but a household).
+
+	\section{Evaluation of methodology used}
+
+The double diamond approach seems to reflect very well the dynamism of real life projects. The model describes "a rhythm of activities" that comes naturally. It includes a very open, exploratory first stage which leaves space for flexibility in adapting to what would be useful to the client.
+
+The Discovery phase was extremely helpful in understanding the context of the problem and establishing ground before the next phases. Having such an open attitude requires a lot of persistence. The responsibility for the entire project rests on the designer and this causes "a creative stress". In the early stages, it is desirable not to be limited by having a concrete idea of what to do in the project (which is not the same as lacking any plan of action). The designer is exposing himself to the unknown and at many points the project could completely change direction or a path could be closed unexpectedly. It is critical to maintain composure, agility and be able to quickly adjust to the new conditions. It is also important to mention that it exposes the project to the goodwill of people across the entire organisation. The more the involved people are open and willing to help the better the outcome of the project will be. In terms of this particular project, the Council employees were very helpful and open-minded and their support has helped tremendously.
+
+The three objectives that came from the Define phase (design brief) were developed in close cooperation with the beneficiaries (and at the same time the requesting party).
+
+The Develop phase managed to address all questions from the previous stage. Having clear, measurable objectives, which were thought through, helped in planning the rest of the process and designing the technical aspects of it. The extent to which implementations were able to solve those problems was described in sections above (4.2 Evaluation of work undertaken).
+
+The key outcome of Deliver stage was feedback from clients. It was very helpful to understand the extent to which it addressed actual needs and whether it succeeded in contributing to the on-going efforts in the Council (being in line with the current ICT strategy at the Council).

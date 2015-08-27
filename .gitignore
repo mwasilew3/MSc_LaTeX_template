@@ -1,0 +1,7 @@
+graphics, queries/*
+*.aux
+*.bbl
+*.toc
+*.blg
+*.log
+*.gz

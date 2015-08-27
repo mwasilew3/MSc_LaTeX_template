@@ -1,0 +1,26 @@
+select 
+       MW.UPRN  as  UPRN,
+       MW."Creation Source"  as  Creation_Source,
+       MW."Group"  as  Group3,
+       MW."Date Created"  as  Date_Created,
+       MW."Reference #"  as  Reference__,
+       MW.Subject  as  Subject,
+       MW."Product Hierarchy"  as  Product_Hierarchy,
+       XCOUNT(*  for MW.UPRN )  as  count_no_of_issues,
+       XCOUNT(MW."Creation Source"  at MW.UPRN,MW."Creation Source"  for MW.UPRN )  as  channels_used
+ from 
+       MW...MW MW
+ group by 
+       MW.UPRN,
+       MW."Creation Source",
+       MW."Group",
+       MW."Date Created",
+       MW."Reference #",
+       MW.Subject,
+       MW."Product Hierarchy"
+ filter 
+       (XCOUNT(*  for MW.UPRN ) > 1) and 
+       (XCOUNT(MW."Creation Source"  at MW.UPRN,MW."Creation Source"  for MW.UPRN ) > 1)
+ order by 
+       UPRN asc,
+       Reference__ asc

@@ -1,0 +1,69 @@
+table with people up to 3 issues:
+
+select 
+       MW."Creation Source"  as  Creation_Source,
+       MW."Group"  as  Group2,
+       MW."Date Created"  as  Date_Created,
+       MW."Reference #"  as  Reference__,
+       MW.Subject  as  Subject,
+       MW."Product Hierarchy"  as  Product_Hierarchy,
+       MW.UPRN  as  UPRN,
+       XCOUNT(MW."Reference #"  at MW.UPRN,MW."Reference #"  for MW.UPRN )  as  No_of_interactions_with_CEC,
+       D_MosaicGroupType.GroupTypeCode  as  Group_Type_Code
+ from 
+       MW...MW MW,
+       Mosaic.MosaicExport.dbo.D_MosaicGroupType D_MosaicGroupType,
+       Mosaic.MosaicExport.dbo.F_MosaicAddresses F_MosaicAddresses
+ where 
+       (MW.UPRN = F_MosaicAddresses.Uprn) and 
+       (D_MosaicGroupType.GroupTypeId = F_MosaicAddresses.MosaicGroupTypeId)
+ group by 
+       MW."Creation Source",
+       MW."Group",
+       MW."Date Created",
+       MW."Reference #",
+       MW.Subject,
+       MW."Product Hierarchy",
+       MW.UPRN,
+       D_MosaicGroupType.GroupTypeCode
+ filter 
+       (XCOUNT(MW."Reference #"  at MW.UPRN,MW."Reference #"  for MW.UPRN ) <= 3)
+ order by 
+       Date_Created asc
+
+
+
+
+above 3 issues:
+
+select 
+       MW."Creation Source"  as  Creation_Source,
+       MW."Group"  as  Group2,
+       MW."Date Created"  as  Date_Created,
+       MW."Reference #"  as  Reference__,
+       MW.Subject  as  Subject,
+       MW."Product Hierarchy"  as  Product_Hierarchy,
+       MW.UPRN  as  UPRN,
+       XCOUNT(MW."Reference #"  at MW.UPRN,MW."Reference #"  for MW.UPRN )  as  No_of_interactions_with_CEC,
+       D_MosaicGroupType.GroupTypeCode  as  Group_Type_Code
+ from 
+       MW...MW MW,
+       Mosaic.MosaicExport.dbo.D_MosaicGroupType D_MosaicGroupType,
+       Mosaic.MosaicExport.dbo.F_MosaicAddresses F_MosaicAddresses
+ where 
+       (MW.UPRN = F_MosaicAddresses.Uprn) and 
+       (D_MosaicGroupType.GroupTypeId = F_MosaicAddresses.MosaicGroupTypeId)
+ group by 
+       MW."Creation Source",
+       MW."Group",
+       MW."Date Created",
+       MW."Reference #",
+       MW.Subject,
+       MW."Product Hierarchy",
+       MW.UPRN,
+       D_MosaicGroupType.GroupTypeCode
+ filter 
+       (XCOUNT(MW."Reference #"  at MW.UPRN,MW."Reference #"  for MW.UPRN ) > 3)
+ order by 
+       Date_Created asc
+

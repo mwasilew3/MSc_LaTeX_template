@@ -1,0 +1,2 @@
+if ([No of interactions with CEC] > 3) then ( 'above 3') else ('up to 3')
+count(rows for [MW].[MW].[Date Created], [MW].[MW].[UPRN], [MW].[MW].[Subject])
