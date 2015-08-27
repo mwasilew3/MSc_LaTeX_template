@@ -1,6 +1,7 @@
 # MSc_LaTeX_template
 
 DISCLAIMER:
+
 This is NOT an official repository by University of Edinburgh. I am NOT an employee/researcher from University of Edinburgh and no one from the University verified this repo. I do NOT provide support. I do NOT take responsibility for this template or anything that you do with it. USE AT YOUR OWN RISK!
 
 I was a student at School of Informatics and it took me a while to setup everything. The idea is to help you with that so that you can focus on writing your dissertation.
@@ -11,6 +12,7 @@ The class file (necessary to run this template on your local computer) comes fro
 
 
 HOW TO:
+
 Step 1:
 Create an account on Github (skip this step if you already have one).
 
@@ -24,7 +26,9 @@ Step 4:
 Edit files locally (e.g. using Texmaker on a DICE machine). Commit. Pull. Push. (see notes below for git tutorials)
 
 
-LATEX: Dice machines come pre-installed with everything you will need (class files, LaTeX compiler, editor). You can start working straight away.
+LATEX:
+
+Dice machines come pre-installed with everything you will need (class files, LaTeX compiler, editor). You can start working straight away.
 
 OTHER NOTES/IDEAS/THINGS THAT MIGHT HELP YOU:
 - git tutorials: https://www.atlassian.com/git/tutorials/
